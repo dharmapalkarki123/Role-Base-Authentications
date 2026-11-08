@@ -1,0 +1,138 @@
+<div class="page-header">
+
+  <div>
+    <h4>Patients Management</h4>
+    <p class="text-muted">Manage and monitor patient records.</p>
+  </div>
+
+  <button class="btn btn-primary">
+    <i class="bi bi-plus-lg me-2"></i>Add Patient
+  </button>
+
+</div>
+
+
+<div class="content-card">
+
+  <!-- Search -->
+  <div class="row mb-4">
+
+    <div class="col-md-5">
+      <div class="input-group">
+        <span class="input-group-text bg-white">
+          <i class="bi bi-search"></i>
+        </span>
+        <input type="text" class="form-control"
+               placeholder="Search patient by name or email">
+      </div>
+    </div>
+
+    <div class="col-md-3">
+      <select class="form-select">
+        <option>All Gender</option>
+        <option>Male</option>
+        <option>Female</option>
+      </select>
+    </div>
+
+  </div>
+
+
+  <!-- Patient Table -->
+  <div class="table-responsive">
+
+    <table class="table align-middle">
+
+      <thead>
+      <tr>
+        <th>Patient ID</th>
+        <th>Patient Name</th>
+        <th>Age</th>
+        <th>Gender</th>
+        <th>Phone</th>
+        <th>Email</th>
+        <th>Actions</th>
+      </tr>
+      </thead>
+
+      <tbody>
+
+      <tr>
+        <td>#PT001</td>
+        <td>
+          <strong>Ram Sharma</strong>
+          <br>
+          <small class="text-muted">Kathmandu, Nepal</small>
+        </td>
+        <td>28</td>
+        <td>Male</td>
+        <td>9800000001</td>
+        <td>ram@gmail.com</td>
+        <td>
+          <button class="btn btn-sm btn-light me-1">
+            <i class="bi bi-eye"></i>
+          </button>
+          <button class="btn btn-sm btn-light me-1">
+            <i class="bi bi-pencil"></i>
+          </button>
+          <button class="btn btn-sm btn-light text-danger">
+            <i class="bi bi-trash"></i>
+          </button>
+        </td>
+      </tr>
+
+      <tr>
+        <td>#PT002</td>
+        <td>
+          <strong>Sita Rai</strong>
+          <br>
+          <small class="text-muted">Biratnagar, Nepal</small>
+        </td>
+        <td>35</td>
+        <td>Female</td>
+        <td>9800000002</td>
+        <td>sita@gmail.com</td>
+        <td>
+          <button class="btn btn-sm btn-light me-1">
+            <i class="bi bi-eye"></i>
+          </button>
+          <button class="btn btn-sm btn-light me-1">
+            <i class="bi bi-pencil"></i>
+          </button>
+          <button class="btn btn-sm btn-light text-danger">
+            <i class="bi bi-trash"></i>
+          </button>
+        </td>
+      </tr>
+
+      <tr>
+        <td>#PT003</td>
+        <td>
+          <strong>Hari Thapa</strong>
+          <br>
+          <small class="text-muted">Itahari, Nepal</small>
+        </td>
+        <td>42</td>
+        <td>Male</td>
+        <td>9800000003</td>
+        <td>hari@gmail.com</td>
+        <td>
+          <button class="btn btn-sm btn-light me-1">
+            <i class="bi bi-eye"></i>
+          </button>
+          <button class="btn btn-sm btn-light me-1">
+            <i class="bi bi-pencil"></i>
+          </button>
+          <button class="btn btn-sm btn-light text-danger">
+            <i class="bi bi-trash"></i>
+          </button>
+        </td>
+      </tr>
+
+      </tbody>
+
+    </table>
+
+  </div>
+
+</div>

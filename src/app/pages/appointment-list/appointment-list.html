@@ -1,0 +1,134 @@
+<div class="page-header">
+
+  <div>
+    <h4>Appointments</h4>
+    <p class="text-muted">Manage hospital appointments.</p>
+  </div>
+
+  <button class="btn btn-primary">
+    <i class="bi bi-plus-lg me-2"></i>Book Appointment
+  </button>
+
+</div>
+
+
+<!-- Appointment Statistics -->
+<div class="row g-3 mb-4">
+
+  <div class="col-md-4">
+    <div class="mini-stat">
+      <h6>Total Appointments</h6>
+      <h3>86</h3>
+    </div>
+  </div>
+
+  <div class="col-md-4">
+    <div class="mini-stat">
+      <h6>Confirmed</h6>
+      <h3 class="text-success">62</h3>
+    </div>
+  </div>
+
+  <div class="col-md-4">
+    <div class="mini-stat">
+      <h6>Pending</h6>
+      <h3 class="text-warning">14</h3>
+    </div>
+  </div>
+
+</div>
+
+
+<!-- Appointment Table -->
+<div class="content-card">
+
+  <div class="row mb-4">
+
+    <div class="col-md-5">
+      <input type="text" class="form-control"
+             placeholder="Search appointments...">
+    </div>
+
+    <div class="col-md-3">
+      <select class="form-select">
+        <option>All Status</option>
+        <option>Confirmed</option>
+        <option>Pending</option>
+        <option>Cancelled</option>
+      </select>
+    </div>
+
+  </div>
+
+
+  <div class="table-responsive">
+
+    <table class="table align-middle">
+
+      <thead>
+      <tr>
+        <th>Appointment ID</th>
+        <th>Patient</th>
+        <th>Doctor</th>
+        <th>Date</th>
+        <th>Time</th>
+        <th>Department</th>
+        <th>Status</th>
+        <th>Action</th>
+      </tr>
+      </thead>
+
+      <tbody>
+
+      <tr>
+        <td>#AP001</td>
+        <td>Ram Sharma</td>
+        <td>Dr. Amit</td>
+        <td>05 Nov 2026</td>
+        <td>10:30 AM</td>
+        <td>Cardiology</td>
+        <td><span class="status-badge status-success">Confirmed</span></td>
+        <td>
+          <button class="btn btn-sm btn-light">
+            <i class="bi bi-eye"></i>
+          </button>
+        </td>
+      </tr>
+
+      <tr>
+        <td>#AP002</td>
+        <td>Sita Rai</td>
+        <td>Dr. Anisha</td>
+        <td>05 Nov 2026</td>
+        <td>11:00 AM</td>
+        <td>Neurology</td>
+        <td><span class="status-badge status-warning">Pending</span></td>
+        <td>
+          <button class="btn btn-sm btn-light">
+            <i class="bi bi-eye"></i>
+          </button>
+        </td>
+      </tr>
+
+      <tr>
+        <td>#AP003</td>
+        <td>Hari Thapa</td>
+        <td>Dr. Amit</td>
+        <td>06 Nov 2026</td>
+        <td>09:00 AM</td>
+        <td>Cardiology</td>
+        <td><span class="status-badge status-danger">Cancelled</span></td>
+        <td>
+          <button class="btn btn-sm btn-light">
+            <i class="bi bi-eye"></i>
+          </button>
+        </td>
+      </tr>
+
+      </tbody>
+
+    </table>
+
+  </div>
+
+</div>

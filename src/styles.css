@@ -1,0 +1,363 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+
+* {
+  font-family: 'Inter', sans-serif;
+}
+
+body {
+  margin: 0;
+  background: #f5f7fb;
+  color: #263247;
+}
+
+/* LOGIN */
+
+.login-wrapper {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #f1f5fb;
+}
+
+.login-card {
+  width: 430px;
+  background: white;
+  padding: 40px;
+  border-radius: 14px;
+  box-shadow: 0 5px 30px rgba(0,0,0,0.06);
+}
+
+.login-icon {
+  font-size: 45px;
+  color: #2563eb;
+}
+
+.form-control,
+.form-select {
+  padding: 11px 13px;
+  border-color: #e0e5ed;
+}
+
+.form-control:focus,
+.form-select:focus {
+  box-shadow: 0 0 0 3px rgba(37,99,235,0.1);
+  border-color: #2563eb;
+}
+
+/* MAIN LAYOUT */
+
+.app-layout {
+  display: flex;
+  min-height: 100vh;
+}
+
+.sidebar {
+  width: 255px;
+  background: white;
+  border-right: 1px solid #e9edf3;
+  display: flex;
+  flex-direction: column;
+  padding: 25px 16px;
+  flex-shrink: 0;
+}
+
+.brand {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  font-size: 23px;
+  font-weight: 700;
+  color: #2563eb;
+  padding: 0 12px;
+  margin-bottom: 45px;
+}
+
+.brand i {
+  font-size: 29px;
+}
+
+.menu-heading {
+  font-size: 11px;
+  font-weight: 600;
+  color: #9aa4b2;
+  padding: 0 12px;
+  margin-bottom: 15px;
+}
+
+.menu-item {
+  display: flex;
+  align-items: center;
+  gap: 13px;
+  padding: 12px;
+  margin-bottom: 7px;
+  text-decoration: none;
+  color: #64748b;
+  border-radius: 8px;
+  font-size: 14px;
+  transition: 0.2s;
+}
+
+.menu-item i {
+  font-size: 18px;
+}
+
+.menu-item:hover,
+.menu-item.active {
+  background: #eff5ff;
+  color: #2563eb;
+  font-weight: 600;
+}
+
+.sidebar-bottom {
+  margin-top: auto;
+  border-top: 1px solid #edf0f4;
+  padding-top: 20px;
+}
+
+.user-profile {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 5px;
+}
+
+.user-profile h6 {
+  font-size: 13px;
+}
+
+.user-profile small {
+  color: #2563eb;
+  font-size: 11px;
+}
+
+/* MAIN CONTENT */
+
+.main-content {
+  flex: 1;
+  min-width: 0;
+}
+
+.top-navbar {
+  height: 85px;
+  background: white;
+  border-bottom: 1px solid #e9edf3;
+  padding: 0 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.top-navbar h5 {
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.user-avatar {
+  width: 38px;
+  height: 38px;
+  border-radius: 50%;
+  background: #dbeafe;
+  color: #2563eb;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 600;
+  font-size: 13px;
+}
+
+.notification-btn {
+  border: none;
+  background: #f1f5f9;
+  width: 38px;
+  height: 38px;
+  border-radius: 50%;
+  color: #475569;
+}
+
+.page-content {
+  padding: 30px;
+}
+
+/* PAGE HEADERS */
+
+.page-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 25px;
+}
+
+.page-header h4 {
+  font-weight: 700;
+  font-size: 21px;
+}
+
+.page-header p {
+  font-size: 13px;
+  margin-bottom: 0;
+}
+
+/* DASHBOARD CARDS */
+
+.stat-card,
+.content-card,
+.mini-stat {
+  background: white;
+  border: 1px solid #edf0f4;
+  border-radius: 12px;
+  padding: 22px;
+}
+
+.stat-card p {
+  color: #64748b;
+  font-size: 13px;
+  margin: 15px 0 5px;
+}
+
+.stat-card h3 {
+  font-weight: 700;
+  font-size: 25px;
+}
+
+.stat-card small {
+  font-size: 12px;
+}
+
+.stat-icon {
+  width: 43px;
+  height: 43px;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 20px;
+}
+
+.bg-blue {
+  background: #eff6ff;
+  color: #2563eb;
+}
+
+.bg-green {
+  background: #ecfdf5;
+  color: #059669;
+}
+
+.bg-purple {
+  background: #f5f3ff;
+  color: #7c3aed;
+}
+
+.bg-orange {
+  background: #fff7ed;
+  color: #ea580c;
+}
+
+.mini-stat h6 {
+  font-size: 13px;
+  color: #64748b;
+}
+
+.mini-stat h3 {
+  font-weight: 700;
+  margin-top: 12px;
+}
+
+/* TABLES */
+
+.content-card {
+  padding: 25px;
+}
+
+.content-card h5 {
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.table thead th {
+  background: #f8fafc;
+  color: #64748b;
+  font-size: 12px;
+  font-weight: 600;
+  padding: 14px;
+  white-space: nowrap;
+}
+
+.table tbody td {
+  font-size: 13px;
+  padding: 15px 14px;
+  color: #475569;
+  white-space: nowrap;
+}
+
+.table tbody tr:hover {
+  background: #f8fafc;
+}
+
+/* STATUS */
+
+.status-badge {
+  padding: 6px 11px;
+  border-radius: 20px;
+  font-size: 11px;
+  font-weight: 600;
+}
+
+.status-success {
+  background: #dcfce7;
+  color: #15803d;
+}
+
+.status-warning {
+  background: #fef3c7;
+  color: #b45309;
+}
+
+.status-danger {
+  background: #fee2e2;
+  color: #dc2626;
+}
+
+/* RESPONSIVE */
+
+@media (max-width: 768px) {
+  .sidebar {
+    width: 75px;
+    padding: 20px 8px;
+  }
+
+  .brand span,
+  .menu-heading,
+  .menu-item:not(.active),
+  .sidebar-bottom .user-profile div:not(.user-avatar) {
+    display: none;
+  }
+
+  .brand {
+    justify-content: center;
+    padding: 0;
+  }
+
+  .menu-item {
+    justify-content: center;
+    padding: 13px 5px;
+  }
+
+  .top-navbar {
+    padding: 0 15px;
+  }
+
+  .top-navbar small {
+    display: none;
+  }
+
+  .page-content {
+    padding: 15px;
+  }
+
+  .login-card {
+    width: 92%;
+    padding: 25px;
+  }
+}/* You can add global styles to this file, and also import other style files */
