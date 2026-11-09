@@ -13,7 +13,7 @@
       <p class="menu-heading">MAIN MENU</p>
 
     @for(item of  roleWiseMenuList; track $index){
-      <a [routerLink]="item.route"
+      <a [routerLink]="item.route" routerLinkActive="active"
 
          class="menu-item">
         <i class="bi bi-grid"></i>
@@ -28,21 +28,7 @@
 
 
 
-      <a routerLink="patients"
 
-         class="menu-item">
-        <i class="bi bi-people"></i>
-        Patients
-      </a>
-
-      @if(loggedUserData.role=="Patient" ||loggedUserData.role=="Reception"){
-        <a routerLink="appointmentList"
-
-                 class="menu-item">
-        <i class="bi bi-calendar-check"></i>
-        Appointments
-      </a>
-      }
 
 
 

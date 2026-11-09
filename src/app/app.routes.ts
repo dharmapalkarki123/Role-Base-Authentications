@@ -5,7 +5,7 @@ import { Patients } from './pages/patients/patients';
 import { AppointmentList } from './pages/appointment-list/appointment-list';
 import { Dashboard } from './pages/dashboard/dashboard';
 import { NewAppointment } from './pages/new-appointment/new-appointment';
-import { Employees } from './pages/employees/employees';
+import { authGuard } from './guard/auth-guard';
 
 export const routes: Routes = [
   {
@@ -20,6 +20,7 @@ export const routes: Routes = [
   {
     path: 'layout',
     component: Layout,
+    canActivate:[authGuard],
     children: [
       {
         path: '',
@@ -39,8 +40,8 @@ export const routes: Routes = [
         component: AppointmentList
       },
       {
-        path: 'employee',
-        component: Employees
+        path: 'dashboard',
+        component: Dashboard
       }
     ]
   }

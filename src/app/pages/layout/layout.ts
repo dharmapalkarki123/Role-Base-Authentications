@@ -4,7 +4,7 @@ import { Constant } from '../../../constant';
 
 @Component({
   selector: 'app-layout',
-  imports: [ RouterLink,RouterOutlet],
+  imports: [ RouterLink,RouterOutlet,RouterLinkActive],
   templateUrl: './layout.html',
   styleUrl: './layout.css',
   standalone: true,
@@ -15,10 +15,11 @@ export class Layout {
   roleWiseMenuList:any[]=Constant.menuList;
 
   constructor(){
+    debugger;
      const local=localStorage.getItem("doctorApp");
      if(local!=null){
        this.loggedUserData=JSON.parse(local);
-       this.roleWiseMenuList.filter(m=>m.roles.includes(this.loggedUserData.role))
+      this.roleWiseMenuList= this.roleWiseMenuList.filter(m=>m.role.includes(this.loggedUserData.role))
      }
   }
 

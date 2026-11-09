@@ -31,6 +31,7 @@ export const Constant = {
   menuList:[
     {menuTitle:"Dashboard",route:"dashboard",role:["Admin","Doctor","Reception"]},
     {menuTitle: "Employee" ,route:"employee",role:["Admin"]},
+    {menuTitle:"Patients",route: "patients",role:["Admin","Doctor"] },
     {menuTitle: "Appointment List",route:"appointmentList",role:["Doctor","Reception","Patient"]},
     {menuTitle:"New Appointment",route:"new",role:["Patient","Reception"]}
   ]
