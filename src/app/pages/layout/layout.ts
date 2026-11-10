@@ -15,7 +15,7 @@ export class Layout {
   roleWiseMenuList:any[]=Constant.menuList;
 
   constructor(){
-    debugger;
+
      const local=localStorage.getItem("doctorApp");
      if(local!=null){
        this.loggedUserData=JSON.parse(local);

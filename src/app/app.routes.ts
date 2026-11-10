@@ -6,6 +6,8 @@ import { AppointmentList } from './pages/appointment-list/appointment-list';
 import { Dashboard } from './pages/dashboard/dashboard';
 import { NewAppointment } from './pages/new-appointment/new-appointment';
 import { authGuard } from './guard/auth-guard';
+import { NoAccess } from './pages/no-access/no-access';
+import { roleCheckGuard } from './guard/role-check-guard';
 
 export const routes: Routes = [
   {
@@ -22,26 +24,31 @@ export const routes: Routes = [
     component: Layout,
     canActivate:[authGuard],
     children: [
-      {
-        path: '',
-        redirectTo: 'dashboard',
-        pathMatch: 'full'
-      },
+
       {
         path: 'new',
-        component: NewAppointment
+        component: NewAppointment,
+        canActivate:[roleCheckGuard]
       },
       {
         path: 'patients',
-        component: Patients
+        component: Patients,
+        canActivate:[roleCheckGuard]
       },
       {
         path: 'appointmentList',
-        component: AppointmentList
+        component: AppointmentList,
+        canActivate:[roleCheckGuard]
       },
       {
         path: 'dashboard',
-        component: Dashboard
+        component: Dashboard,
+        canActivate:[roleCheckGuard]
+      },
+      {
+        path:'no-access',
+        component:NoAccess,
+
       }
     ]
   }

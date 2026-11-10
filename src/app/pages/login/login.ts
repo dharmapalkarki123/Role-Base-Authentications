@@ -22,7 +22,7 @@ export class Login {
   };
 
   onLogin() {
-    debugger
+
 
     const Users = Constant.userList;
 
