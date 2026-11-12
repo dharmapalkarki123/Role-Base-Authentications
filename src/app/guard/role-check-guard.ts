@@ -4,7 +4,7 @@ import { inject } from '@angular/core';
 
 export const roleCheckGuard: CanActivateFn = (route, state) => {
 debugger;
-  const routerName = state.url.split("/")[1];
+  const routerName = state.url.split("/")[2];
 
   const menuItem = Constant.menuList.find(m => m.route == routerName);
 

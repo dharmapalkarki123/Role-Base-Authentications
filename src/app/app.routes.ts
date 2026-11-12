@@ -8,6 +8,7 @@ import { NewAppointment } from './pages/new-appointment/new-appointment';
 import { authGuard } from './guard/auth-guard';
 import { NoAccess } from './pages/no-access/no-access';
 import { roleCheckGuard } from './guard/role-check-guard';
+import { Employees } from './pages/employees/employees';
 
 export const routes: Routes = [
   {
@@ -28,6 +29,11 @@ export const routes: Routes = [
       {
         path: 'new',
         component: NewAppointment,
+        canActivate:[roleCheckGuard]
+      },
+      {
+        path:"employee",
+        component:Employees,
         canActivate:[roleCheckGuard]
       },
       {
